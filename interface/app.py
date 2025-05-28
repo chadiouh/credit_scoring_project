@@ -25,7 +25,7 @@ if st.button("Prédire"):
     else:
         payload = {"data": input_data}
         try:
-            response = requests.post("https://ton-api.onrender.com/predict", json=payload)
+            response = requests.post("https://credit-scoring-project-1.onrender.com", json=payload)
             if response.status_code == 200:
                 result = response.json()
                 st.success(f"✅ Probabilité d'insolvabilité : {result['proba']}")
