@@ -7,7 +7,7 @@ st.title("🧠 Interface Credit Scoring")
 st.write("Remplissez les variables principales pour prédire si un client est solvable.")
 
 # === Chargement des top features ===
-with open("../models/top_features.json", "r") as f:
+with open("top_features.json", "r") as f:
     top_features = json.load(f)
 
 # === Création dynamique du formulaire ===
